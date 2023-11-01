@@ -11,6 +11,7 @@ public class IBatisConfigurationThroughXmlApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(IBatisConfigurationThroughXmlApplication.class, args);
+		   
 		
 			}
 
