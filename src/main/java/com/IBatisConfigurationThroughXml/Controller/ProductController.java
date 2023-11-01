@@ -24,6 +24,7 @@ import com.IBatisConfigurationThroughXml.Service.ProductService;
 @RestController
 @RequestMapping("/xml/products")
 public class ProductController {
+	
 
 	private final ProductService productService;
 
@@ -43,7 +44,7 @@ public class ProductController {
 		if (userRequest != null) {
 			return ResponseEntity.ok(userRequest);
 		} else {
-			return ResponseEntity.notFound().build();
+			return ResponseEntity.notFound().build();  
 		}
 	}
 
