@@ -43,6 +43,7 @@ public class ProductController {
 	public ResponseEntity<UserRequest> getUserRequestById(@PathVariable Long id) {
 		UserRequest userRequest = productService.getUserRequestById(id);
 		System.out.println();
+		
 		if (userRequest != null) {
 			return ResponseEntity.ok(userRequest);
 		} else {
