@@ -37,8 +37,6 @@ public class ProductController {
 		List<UserRequest> users = productService.getAllUsers();
 		return ResponseEntity.ok(users);
 	}
-
-	
 	
 	@GetMapping("/{id}")
 	public ResponseEntity<UserRequest> getUserRequestById(@PathVariable Long id) {
